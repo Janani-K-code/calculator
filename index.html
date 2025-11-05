@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>calc</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colorful Calculator v4.0 🌈</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="theme-toggle">
+    <input type="checkbox" id="toggleMode" onchange="toggleTheme()">
+    <label for="toggleMode" class="switch"></label>
+    <span id="modeText">🌞 Light Mode</span>
+  </div>
+
+  <div class="calculator">
+    <input type="text" id="display" readonly>
+
+    <div class="buttons">
+      <button class="btn special" onclick="clearDisplay()">C</button>
+      <button class="btn special" onclick="deleteChar()">DEL</button>
+      <button class="btn special" onclick="appendChar('%')">%</button>
+      <button class="btn operator" onclick="appendChar('/')">÷</button>
+
+      <button class="btn" onclick="appendChar('7')">7</button>
+      <button class="btn" onclick="appendChar('8')">8</button>
+      <button class="btn" onclick="appendChar('9')">9</button>
+      <button class="btn operator" onclick="appendChar('*')">×</button>
+
+      <button class="btn" onclick="appendChar('4')">4</button>
+      <button class="btn" onclick="appendChar('5')">5</button>
+      <button class="btn" onclick="appendChar('6')">6</button>
+      <button class="btn operator" onclick="appendChar('-')">−</button>
+
+      <button class="btn" onclick="appendChar('1')">1</button>
+      <button class="btn" onclick="appendChar('2')">2</button>
+      <button class="btn" onclick="appendChar('3')">3</button>
+      <button class="btn operator" onclick="appendChar('+')">+</button>
+
+      <button class="btn zero" onclick="appendChar('0')">0</button>
+      <button class="btn" onclick="appendChar('.')">.</button>
+      <button class="btn equals" onclick="calculate()">=</button>
+    </div>
+  </div>
+
+  <!-- Working sound -->
+  <audio id="clickSound" preload="auto">
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_7a6b0d5b57.mp3?filename=click-sound-7a6b0d5b57.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
